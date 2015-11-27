@@ -24,7 +24,7 @@ Code Copletition uses Eclim. To install it just run *install_eclim.sh* (takes so
 * can't change default shell to zsh if no password is set for user ( chsh needs password to change shell for user)
 
 ### TO DO LIST
-- [ ] autorun for elimd
+- [ ] autorun for eclimd
 - [ ] fix bug with chsh
 - [ ] auto session configuration
 - [ ] installer menu
