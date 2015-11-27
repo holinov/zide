@@ -28,3 +28,11 @@ Code Copletition uses Eclim. To install it just run *install_eclim.sh* (takes so
 [] fix bug with chsh
 [] auto session configuration
 [] installer menu
+
+## Docs
+### Docs for parts of IDE
+* [Elicm docs](http://eclim.org/gettingstarted.html)
+* [tmux cheatsheet](https://gist.github.com/MohamedAlaa/2961058/)
+
+### Provided bindings
+* **Ctrl+N** - toggle file tree
