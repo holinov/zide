@@ -24,10 +24,10 @@ Code Copletition uses Eclim. To install it just run *install_eclim.sh* (takes so
 * can't change default shell to zsh if no password is set for user ( chsh needs password to change shell for user)
 
 ### TO DO LIST
-[] autorun for elimd
-[] fix bug with chsh
-[] auto session configuration
-[] installer menu
+- [ ] autorun for elimd
+- [ ] fix bug with chsh
+- [ ] auto session configuration
+- [ ] installer menu
 
 ## Docs
 ### Docs for parts of IDE
@@ -35,4 +35,5 @@ Code Copletition uses Eclim. To install it just run *install_eclim.sh* (takes so
 * [tmux cheatsheet](https://gist.github.com/MohamedAlaa/2961058/)
 
 ### Provided bindings
-* **Ctrl+N** - toggle file tree
+* VIM
+  * **Ctrl+N** - toggle file tree
