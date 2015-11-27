@@ -7,9 +7,9 @@ zsh_plugins="git git-extras gitignore command-not-found github gnu-utils history
 
 #INSTALL PREREQUISITES
 if [ -n "$(command -v yum)" ]; then
-	yum 	-y install git wget vim git-extras zsh tmux
+	sudo yum 	-y install sudo git wget vim git-extras zsh tmux
 elif [ -n "$(command -v apt-get)" ]; then
-	apt-get -y install git wget vim git-extras zsh tmux
+	sudo apt-get -y install sudo git wget vim git-extras zsh tmux
 fi
 
 #INSTALL VUNDLE
