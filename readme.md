@@ -37,3 +37,8 @@ Code Copletition uses Eclim. To install it just run *install_eclim.sh* (takes so
 ### Provided bindings
 * VIM
   * **Ctrl+N** - toggle file tree
+* TMUX
+  * **Ctrl+b z** - toggle zoom (full screen) fir current panel (this is default binding but many people forget about it)
+  * **Ctrl+b Ctrl+s \ Ctrl+b Ctrl+r ** save/restore TMUX session
+  * **Ctrl+b R** reload TMUX configs
+  * **Ctrl+b I\U** install\update tmux plugins 
