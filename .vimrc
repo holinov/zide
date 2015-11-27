@@ -12,6 +12,7 @@ Plugin 'git://github.com/tpope/vim-fugitive.git'
 Plugin 'git://github.com/airblade/vim-gitgutter.git'
 Plugin 'tmux-plugins/vim-tmux'
 Plugin 'tmux-plugins/vim-tmux-focus-events'
+Plugin 'https://github.com/majutsushi/tagbar.git'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -32,3 +33,12 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " toggle NERDTree
 map <C-n> :NERDTreeToggle<CR>
+
+
+"""""""""""
+"" Tagbar config
+"""""""""""
+
+autocmd vimenter * if argc() != 0 || exists("s:std_id") | TagbarToggle | endif
+nmap <C-m> :TagbarToggle<CR>
+
