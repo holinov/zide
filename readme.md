@@ -17,7 +17,7 @@ Run *install_to.sh <host-to-istall>*
 * Remote installation uses password-less (key-auth) ssh connection to connect to destanation node
 * sudo is requered on remote server
 
-## Code coompletition instalattion
+## Code completition instalattion
 Code Copletition uses Eclim. To install it just run *install_eclim.sh* (takes some time)
 
 ### Known bugs
