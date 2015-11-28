@@ -9,11 +9,7 @@
 INST_TYPE="Local" 
 INST_HOST='localhost'
 INSTALL_ECLIM=0 # 0 no 1 yes
-CONFIG_FILES=("./.tmux.conf" "./.vimrc")
-LINST_FILES=("./zide_install.sh" "./install_eclim.sh")
-
-# Calculated values
-pinst="apt-get install"
+source ./config.cfg
 
 # Dialog functions
 #########################
@@ -26,9 +22,7 @@ function select_i_type(){
 PS3="Select install type: "
 select INST_TYPE in "Local" "Remote"
 do
-	echo 
 	echo "Selected $INST_TYPE"
-	echo
 	break
 done
 
@@ -64,7 +58,7 @@ if [ $INSTALL_ECLIM -eq 1 ]; then
 	echo ./install_eclim.sh
 fi
 for file in ${CONFIG_FILES[@]}; do
-	echo cp "$file" ~/
+	echo cp "$file" "$HOME/$file"
 done
 
 }
