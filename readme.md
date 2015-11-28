@@ -18,7 +18,8 @@ Run *install_to.sh <host-to-istall>*
 * sudo is requered on remote server
 
 ## Code completition instalattion
-Code Copletition uses Eclim. To install it just run *install_eclim.sh* (takes some time)
+[YouCompleteMe](https://github.com/Valloric/YouCompleteMe) is used as main autocomplete engine
+Java Code Copletition uses Eclim integrated to YCM. To install it just run *install_eclim.sh* (takes some time) 
 
 ### Known bugs
 * can't change default shell to zsh if no password is set for user ( chsh needs password to change shell for user)
@@ -33,12 +34,17 @@ Code Copletition uses Eclim. To install it just run *install_eclim.sh* (takes so
 ### Docs for parts of IDE
 * [Elicm docs](http://eclim.org/gettingstarted.html)
 * [tmux cheatsheet](https://gist.github.com/MohamedAlaa/2961058/)
+* [UltiSnips](https://github.com/SirVer/ultisnips)
+* [CtrlP](https://github.com/kien/ctrlp.vim)
+* [vim-surrond](https://github.com/tpope/vim-surround)
+* [ack](https://github.com/rking/ag.vim) 
 
 ### Provided bindings
 * VIM
-  * **Ctrl+N** - toggle file tree
+  * **Ctrl+m** toggle file tree
+  * **Ctrl+m** toggle code map
 * TMUX
-  * **Ctrl+b z** - toggle zoom (full screen) fir current panel (this is default binding but many people forget about it)
+  * **Ctrl+b z** toggle zoom (full screen) fir current panel (this is default binding but many people forget about it)
   * **Ctrl+b Ctrl+s \ Ctrl+b Ctrl+r** save/restore TMUX session
   * **Ctrl+b R** reload TMUX configs
-  * **Ctrl+b I\U** install\update tmux plugins 
+  * **Ctrl+b I\U** install\update tmux plugins

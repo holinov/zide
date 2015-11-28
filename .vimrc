@@ -9,6 +9,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tmux-plugins/vim-tmux'
 Plugin 'tmux-plugins/vim-tmux-focus-events'
@@ -17,6 +18,9 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'ervandew/supertab'
+Plugin 'rking/ag.vim'
+Plugin 'vim-scripts/vim-gradle'
+Plugin 'mikelue/vim-maven-plugin'
 
 """ VIM snippets
 " Track the engine.
@@ -75,3 +79,7 @@ let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 " UltiSnips split
 let g:UltiSnipsEditSplit="vertical"
+
+""""""
+"" ag.vim config
+let g:ag_working_path_mode="r"

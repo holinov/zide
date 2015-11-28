@@ -7,9 +7,9 @@ zsh_plugins="git git-extras gitignore command-not-found github gnu-utils history
 
 #INSTALL PREREQUISITES
 if [ -n "$(command -v yum)" ]; then
-	sudo yum 	-y install sudo git wget vim git-extras zsh tmux
+	sudo yum 	-y install sudo git wget vim git-extras zsh tmux silversearcher-ag
 elif [ -n "$(command -v apt-get)" ]; then
-	sudo apt-get -y install sudo git wget vim git-extras zsh tmux
+	sudo apt-get -y install sudo git wget vim git-extras zsh tmux the_silver_searcher
 fi
 
 #INSTALL VUNDLE
