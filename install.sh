@@ -1,4 +1,9 @@
 #!/bin/bash
+##########################
+## Script: 	Installation script
+## Author: 	kholinow
+## Created: 	2015-11-28
+##########################
 
 # Params
 INST_TYPE="Local" 
@@ -11,8 +16,12 @@ LINST_FILES=("./zide_install.sh" "./install_eclim.sh")
 pinst="apt-get install"
 
 # Dialog functions
-
-function select_i_type() {
+#########################
+## Function: 	select_i_type
+## Author: 	kholinow
+## Created: 	2015-11-28
+##########################
+function select_i_type(){
 
 PS3="Select install type: "
 select INST_TYPE in "Local" "Remote"
@@ -34,14 +43,18 @@ case "$ans" in
 	y|Y) INSTALL_ECLIM=1
 		;;
 	n|N) INSTALL_ECLIN=1
-		;;
+		:w;;
 	*) INSTALL_ECLIM=0
 		;;
 esac
 }
 
 # Installation functions
-
+#########################
+## Function: 	local_install
+## Author: 	kholinow
+## Created: 	2015-11-28
+##########################
 function local_install(){
 echo "Installing zsh,vim,tmux and others"
 echo ./zide_install.sh
@@ -65,6 +78,4 @@ if [ "$INST_TYPE" == "Local" ]; then
 fi
 
 }
-
 main
-

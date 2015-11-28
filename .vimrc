@@ -8,11 +8,21 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'git://github.com/tpope/vim-fugitive.git'
-Plugin 'git://github.com/airblade/vim-gitgutter.git'
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'tmux-plugins/vim-tmux'
 Plugin 'tmux-plugins/vim-tmux-focus-events'
-Plugin 'https://github.com/majutsushi/tagbar.git'
+Plugin 'majutsushi/tagbar'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'kien/ctrlp.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'ervandew/supertab'
+
+""" VIM snippets
+" Track the engine.
+Plugin 'SirVer/ultisnips'
+" Snippets are separated from the engine. Add this if you want them:
+Plugin 'honza/vim-snippets'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -38,7 +48,30 @@ map <C-n> :NERDTreeToggle<CR>
 """""""""""
 "" Tagbar config
 """""""""""
-
-autocmd vimenter * if argc() != 0 || exists("s:std_id") | TagbarToggle | endif
 nmap <C-m> :TagbarToggle<CR>
 
+""""""""""
+"" CtrlP config (fuzzy search)
+""""""""""
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+
+"""""""""
+"" Eclim, YouCompleteMe and Vim snippets settings
+"""""""""
+let g:EclimCompletionMethod = 'omnifunc'
+
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+
+" UltiSnips split
+let g:UltiSnipsEditSplit="vertical"
