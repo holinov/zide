@@ -26,5 +26,5 @@ tar zxf "$HOME/$ecl"
 java -Dvim.files="$HOME/.vim" -Declipse.home="$ecl_home" -jar "$HOME/$eclim" install
 
 #TODO: make autolauch
-Xvfb :1 -screen 0 1024x768x24 &
-DISPLAY=:1 $ecl_home/eclimd -b
+./scripts/zmanage vxfb
+./scripts/zmanage server
